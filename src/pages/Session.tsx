@@ -15,6 +15,7 @@ const Session = () => {
     const [sessionData, setSessionData] = useState<SessionDataPoint[]>([]);
     const [showDetailedView, setShowDetailedView] = useState(false);
 
+    if (eegData) console.log("test")
 
     const startSession = () => {
         setIsSessionActive(true);
